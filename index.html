@@ -113,6 +113,8 @@
   .screenshot-placeholder span{font-family:'JetBrains Mono'; font-size:12px; color:var(--muted); text-align:center; max-width:340px;}
   .screenshot-caption{font-family:'JetBrains Mono'; font-size:12px; color:var(--muted); margin-top:14px;}
 
+  .demo-video{display:block; width:100%; max-height:640px; background:#000;}
+
   /* limitations */
   .limits-list{list-style:none; margin-top:8px;}
   .limits-list li{display:flex; gap:14px; padding:14px 0; border-bottom:1px solid var(--line); font-size:14.5px; color:var(--muted);}
@@ -274,14 +276,10 @@
   <div class="wrap">
     <div class="kicker">Product</div>
     <h2 class="section-title">The chat + order lookup flow.</h2>
-    <p class="section-lede">Drop your screenshot of the Next.js frontend in place of this frame — save it as <span class="mono" style="color:var(--cyan)">screenshot.png</span> next to this page and swap the placeholder <span class="mono" style="color:var(--cyan)">div</span> for an <span class="mono" style="color:var(--cyan)">&lt;img&gt;</span> tag.</p>
     <div class="screenshot-frame">
-      <div class="screenshot-placeholder">
-        <span>1440 × 900 — chat panel with grounded policy answer + order lookup card, customer-scoped</span>
-      </div>
+      <video class="demo-video" src="demo.mp4" controls preload="metadata" playsinline></video>
     </div>
-    <p class="screenshot-caption">Replace this block: <span class="mono">&lt;img src="screenshot.png" alt="FusionMind chat and order lookup"&gt;</span></p>
-
+    <p class="screenshot-caption">Live walkthrough of the chat panel and order lookup flow.</p>
     <div style="margin-top:64px;">
       <div class="kicker">Trace</div>
       <h3 style="font-family:'Space Grotesk'; font-size:20px; margin-bottom:16px;">A real tool loop: damaged item → replacement</h3>
